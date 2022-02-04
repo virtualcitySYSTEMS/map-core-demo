@@ -1,0 +1,63 @@
+{
+  "boundingVolume": {
+    "region": [
+      0.152631088,
+      0.885969778,
+      0.152726962,
+      0.886065652,
+      175.3,
+      183.1
+    ]
+  },
+  "geometricError": 0.0,
+  "content": {
+    "boundingVolume": {
+      "region": [
+        0.152659815,
+        0.886047505,
+        0.152664003,
+        0.886051055,
+        175.3,
+        183.1
+      ]
+    },
+    "uri": "15/34360/7142.b3dm"
+  },
+  "properties": {
+    "externalReference externalObjectName": {
+      "valueType": "STRING"
+    },
+    "DatenquelleDachhoehe": {
+      "valueType": "STRING"
+    },
+    "Grundrissaktualitaet": {
+      "valueType": "STRING"
+    },
+    "Gemeindeschluessel": {
+      "valueType": "STRING"
+    },
+    "DatenquelleLage": {
+      "valueType": "STRING"
+    },
+    "measuredHeight": {
+      "valueType": "DOUBLE",
+      "minimum": 6.641,
+      "maximum": 6.641
+    },
+    "DatenquelleBodenhoehe": {
+      "valueType": "STRING"
+    },
+    "roofType": {
+      "valueType": "STRING"
+    },
+    "function": {
+      "valueType": "STRING"
+    },
+    "creationDate": {
+      "valueType": "STRING"
+    },
+    "Geometrietyp2DReferenz": {
+      "valueType": "STRING"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+    "tilejson": "2.1.0",
+    "qmc-version": "4.1-17-g4439cdd_64bit_QMC_virtualcitySYSTEMS_GmbH",
+    "version": "1.1643809324918210",
+    "format": "quantized-mesh-1.0",
+    "scheme": "tms",
+    "extensions": [
+        "octvertexnormals"
+    ],
+    "tiles": [
+        "{z}/{x}/{y}.terrain?v={version}"
+    ],
+    "minzoom": 0,
+    "maxzoom": 18,
+    "bbox": [
+        8.61602783203125,
+        50.730743408203128,
+        8.858413696289063,
+        50.86669921875
+    ],
+    "bounds": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+    ],
+    "projection": "EPSG:4326",
+    "available": [
+        [
+            {
+                "endY": 0,
+                "endX": 1,
+                "startX": 0,
+                "startY": 0
+            }
+        ],
+        [
+            {
+                "endY": 1,
+                "endX": 2,
+                "startX": 2,
+                "startY": 1
+            }
+        ],
+        [
+            {
+                "endY": 3,
+                "endX": 4,
+                "startX": 4,
+                "startY": 3
+            }
+        ],
+        [
+            {
+                "endY": 6,
+                "endX": 8,
+                "startX": 8,
+                "startY": 6
+            }
+        ],
+        [
+            {
+                "endY": 12,
+                "endX": 16,
+                "startX": 16,
+                "startY": 12
+            }
+        ],
+        [
+            {
+                "endY": 25,
+                "endX": 33,
+                "startX": 33,
+                "startY": 25
+            }
+        ],
+        [
+            {
+                "endY": 50,
+                "endX": 67,
+                "startX": 67,
+                "startY": 50
+            }
+        ],
+        [
+            {
+                "endY": 100,
+                "endX": 134,
+                "startX": 134,
+                "startY": 100
+            }
+        ],
+        [
+            {
+                "endY": 200,
+                "endX": 268,
+                "startX": 268,
+                "startY": 200
+            }
+        ],
+        [
+            {
+                "endY": 400,
+                "endX": 537,
+                "startX": 536,
+                "startY": 400
+            }
+        ],
+        [
+            {
+                "endY": 801,
+                "endX": 1074,
+                "startX": 1073,
+                "startY": 800
+            }
+        ],
+        [
+            {
+                "endY": 1602,
+                "endX": 2148,
+                "startX": 2146,
+                "startY": 1601
+            }
+        ],
+        [
+            {
+                "endY": 3205,
+                "endX": 4297,
+                "startX": 4292,
+                "startY": 3202
+            }
+        ],
+        [
+            {
+                "endY": 6410,
+                "endX": 8595,
+                "startX": 8584,
+                "startY": 6404
+            }
+        ],
+        [
+            {
+                "endY": 12821,
+                "endX": 17190,
+                "startX": 17168,
+                "startY": 12809
+            }
+        ],
+        [
+            {
+                "endY": 25643,
+                "endX": 34380,
+                "startX": 34336,
+                "startY": 25619
+            }
+        ]
+    ]
+}

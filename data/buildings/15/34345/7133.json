@@ -1,0 +1,43 @@
+{
+  "boundingVolume": {
+    "region": [
+      0.151192981,
+      0.886832642,
+      0.151288855,
+      0.886928516,
+      243.9,
+      257.5
+    ]
+  },
+  "geometricError": 0.0,
+  "content": {
+    "boundingVolume": {
+      "region": [
+        0.15128552,
+        0.886905848,
+        0.151288542,
+        0.886908308,
+        243.9,
+        257.5
+      ]
+    },
+    "uri": "15/34345/7133.b3dm"
+  },
+  "properties": {
+    "externalReference externalObjectName": {
+      "valueType": "STRING"
+    },
+    "Gemeindeschluessel": {
+      "valueType": "STRING"
+    },
+    "function": {
+      "valueType": "STRING"
+    },
+    "creationDate": {
+      "valueType": "STRING"
+    },
+    "Geometrietyp2DReferenz": {
+      "valueType": "STRING"
+    }
+  }
+}
