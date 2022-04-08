@@ -1,12 +1,12 @@
 import {
   MapCollection,
-  Openlayers,
+  OpenlayersMap,
   CesiumMap,
-  OpenStreetMap,
+  OpenStreetMapLayer,
   ViewPoint,
-  Terrain,
-  CesiumTileset,
-  VectorTile
+  TerrainLayer,
+  CesiumTilesetLayer,
+  VectorTileLayer
 } from '@vcmap/core';
 import Synchronizer from './synchronizer.js';
 import InfoTool from './infoTool.js';
@@ -34,7 +34,7 @@ function setupMaps() {
   mapCollection2D.layerCollection = layerCollection;
   mapCollection2D.eventHandler = mapCollection3D.eventHandler;
   mapCollection2D.setTarget('target-2D');
-  mapCollection2D.add(new Openlayers({ name: 'ol', fixedNorthOrientation: false }));
+  mapCollection2D.add(new OpenlayersMap({ name: 'ol', fixedNorthOrientation: false }));
 
   return {
     mapCollection3D,
@@ -43,25 +43,25 @@ function setupMaps() {
 }
 
 async function setupLayers(layerCollection) {
-  const osm = new OpenStreetMap({ name: 'osmBase' });
+  const osm = new OpenStreetMapLayer({ name: 'osmBase' });
   layerCollection.add(osm);
 
-  const terrain = new Terrain({
+  const terrain = new TerrainLayer({
     name: 'terrain',
     url: 'data/terrain',
   });
   layerCollection.add(terrain);
 
-  const buildings = new CesiumTileset({
+  const buildings = new CesiumTilesetLayer({
     name: 'building',
     url: 'data/buildings',
   });
   layerCollection.add(buildings);
 
-  const vectorTiles = new VectorTile({
+  const vectorTiles = new VectorTileLayer({
     mapNames: ['ol'],
     tileProvider: {
-      type: 'vcs.vcm.layer.tileProvider.MVTTileProvider',
+      type: 'MVTTileProvider',
       url: 'data/vectorTiles/{z}/{x}/{y}.pbf',
       baseLevels: [12, 13, 14, 15],
       idProperty: 'gmlid',

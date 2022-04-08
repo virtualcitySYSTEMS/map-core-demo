@@ -1,14 +1,13 @@
 import {
-  GeoJSON,
+  GeoJSONLayer,
   getFlatCoordinatesFromGeometry,
   getGlobalHider,
-  getHeightFromTerrainProvider,
   ViewPoint
 } from '@vcmap/core';
 
 class Planning {
   constructor(mapCollection) {
-    this._layer = new GeoJSON({
+    this._layer = new GeoJSONLayer({
       url: 'data/geojson/section.json',
       style: {
         fill: {

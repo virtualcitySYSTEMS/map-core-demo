@@ -1,4 +1,4 @@
-import { CesiumMap, Openlayers, VcsEvent } from '@vcmap/core';
+import { CesiumMap, OpenlayersMap, VcsEvent } from '@vcmap/core';
 
 class Synchronizer {
   constructor(map1, map2) {
@@ -54,7 +54,7 @@ class Synchronizer {
     const listener = this._listener.bind(this);
     if (this._focusedMap instanceof CesiumMap) {
       this._tracker = this._focusedMap.getScene().postRender.addEventListener(listener);
-    } else if (this._focusedMap instanceof Openlayers) {
+    } else if (this._focusedMap instanceof OpenlayersMap) {
       const { olMap } = this._focusedMap;
       olMap.on('postrender', listener);
       this._tracker = () => olMap.un('postrender', listener);

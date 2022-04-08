@@ -1,4 +1,4 @@
-import { CesiumTileset, DeclarativeStyleItem, EventType, VcsEvent, VectorTile } from '@vcmap/core';
+import { CesiumTilesetLayer, DeclarativeStyleItem, EventType, VcsEvent, VectorTileLayer } from '@vcmap/core';
 import SelectInteraction from './selectInteraction.js';
 
 const declarativeStyle = new DeclarativeStyleItem({
@@ -21,7 +21,7 @@ const declarativeStyle = new DeclarativeStyleItem({
 class InfoTool {
   constructor(mapCollection) {
     this._eventHandler = mapCollection.eventHandler;
-    this._selectLayers = [...mapCollection.layerCollection].filter(l => l instanceof CesiumTileset || l instanceof VectorTile);
+    this._selectLayers = [...mapCollection.layerCollection].filter(l => l instanceof CesiumTilesetLayer || l instanceof VectorTileLayer);
     this._selectInteraction = new SelectInteraction(this._selectLayers);
     this._declarativeStyleSet = new VcsEvent();
   }

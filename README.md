@@ -1,6 +1,8 @@
-# @vcmap/core demo
+# @vcmap/core Demo
+> Part of the [VC Map Project](https://github.com/virtualcitySYSTEMS/map-ui)
+
 This demo was created for the FOSSGIS 2022 online conference in Marburg. 
-It illustrates a simple web app using the @vcmap/core as its main GIS library
+It illustrates a simple web app using the `@vcmap/core` as its main GIS library
 and Vue/Vuetify as its UI framework.
 
 To run the demo:
